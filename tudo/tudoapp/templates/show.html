@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/show.css">
+</head>
+<body>
+    {% include "header.html "%}
+    <h1>TO-DO APP</h1><br>
+    <div class="all">
+    <table border="3px" >
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>mob</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        {% for i in all %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.mob}}</td>
+            <td>{{i.password}}</td>
+            <td class="th"><button class="delete"><a href="/project/delete/{{i.id}}/">Delete</a></button>&nbsp;<button class="update"><a href="/project/update/{{i.id}}/">Update</a></button></td>
+        </tr>
+        {% endfor %}
+    </table><br>
+    <button class="add"><a href="/project/tudo/">Add</a></button>
+    </div>
+    
+</body>
+</html>

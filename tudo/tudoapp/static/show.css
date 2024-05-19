@@ -1,0 +1,56 @@
+table{
+    padding: 14px;
+    margin: 4px;
+    text-align: center;
+    vertical-align:center;
+    width: 100%;
+}
+th{
+    height: 70px;
+}
+tr:hover{
+    background-color: coral;
+}
+button{
+    width: 80px;
+    height: 20px;
+    color: white;
+    padding: 17px;
+    margin: 9px;
+    font-size: medium;
+    text-align: center;
+}
+
+.delete{
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.update{
+    background-color: green;
+    display: flex;
+    align-items: center;
+}
+.add{
+    background-color: magenta;
+    display: flex;
+    align-items: center;
+}
+.th{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: magenta;
+    margin-top: 18px;
+}
+.all{
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
